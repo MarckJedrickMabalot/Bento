@@ -4,134 +4,216 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Terraria Weapons Gallery</title>
+  <title>Terraria Loadout</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <style>
     body {
-      background-color: #1b2a1b;
+      background-color: #141a47;
+    }
+
+    .logo img {
+      max-width: 100%;
+      height: 140px;
+      object-fit: contain;
     }
 
     .card {
       min-height: 100px;
-      background-color: #3d5a2a;
+      background-color: #4c5cb0;
+      border: 2px solid #2a3480;
       color: white;
+      text-align: center;
+    }
+
+    .equip .card {
+      background-color: #2e5e3e;
+      border-color: #1b3a27;
     }
 
     .card img {
       width: 100%;
       height: 150px;
       object-fit: contain;
+      flex-shrink: 0;
     }
 
-    .h-100 img {
-      height: 300px;
+    .card.tall {
+      justify-content: center;
+    }
+
+    .card.tall img {
+      height: 220px;
+    }
+
+    @media (min-width: 768px) {
+      .card.tall {
+        height: 100%;
+      }
+
+      .card.tall img {
+        height: 300px;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="container-fluid p-3">
+
     <div class="row">
-      <div class="col-6 col-md-2 p-1">
-        <div class="card p-1">
-          <img src="assets/images/A-Copper-Shortsword.png" class="img-fluid" alt="Copper Shortsword">
-          Copper Shortsword
-        </div>
-      </div>
-      <div class="col-6 col-md-2 p-1">
-        <div class="card p-1">
-          <img src="assets/images/Muramasa.webp" class="img-fluid" alt="Muramasa">
-          Muramasa
-        </div>
-      </div>
-      <div class="col-6 col-md-2 p-1">
-        <div class="card p-1">
-          <img src="assets/images/391960bae6d59c0.webp" class="img-fluid" alt="Starfury">
-          Starfury
-        </div>
-      </div>
-      <div class="col-6 col-md-3 p-1">
-        <div class="card p-1">
-          <img src="assets/images/141194.jpg" class="img-fluid" alt="Night's Edge">
-          Night's Edge
-        </div>
-      </div>
-      <div class="col-12 col-md-3 p-1">
-        <div class="card p-1">
-          <img src="assets/images/TerraBlade.webp" class="img-fluid" alt="Terra Blade">
-          Terra Blade
-        </div>
+      <div class="col-12 p-1 logo text-center">
+        <img src="assets/images/terraria-logo.webp" class="img-fluid" alt="Terraria">
       </div>
     </div>
+
     <div class="row">
-      <div class="col-12 col-md-4">
+
+      <div class="col-12 col-md-8">
         <div class="row">
-          <div class="col-12 p-1">
-            <div class="card p-1">
-              <img src="assets/images/00fb897674face9.webp" class="img-fluid" alt="Megashark">
-              Megashark
+          <div class="col-12 col-md-6 p-1">
+            <div class="card p-1 tall">
+              <img src="assets/images/zenith.webp" class="img-fluid" alt="Zenith">
+              Zenith
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-6 p-1">
+                <div class="card p-1 h-100">
+                  <img src="assets/images/terra-blade.webp" class="img-fluid" alt="Terra Blade">
+                  Terra Blade
+                </div>
+              </div>
+              <div class="col-6 p-1">
+                <div class="card p-1 h-100">
+                  <img src="assets/images/meowmere.webp" class="img-fluid" alt="Meowmere">
+                  Meowmere
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 p-1">
+                <div class="card p-1 h-100">
+                  <img src="assets/images/nights-edge.jpg" class="img-fluid" alt="Night's Edge">
+                  Night's Edge
+                </div>
+              </div>
+              <div class="col-6 p-1">
+                <div class="card p-1 h-100">
+                  <img src="assets/images/star-wrath.png" class="img-fluid" alt="Star Wrath">
+                  Star Wrath
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-6 p-1">
-            <div class="card p-1">
-              <img src="assets/images/phx.png" class="img-fluid" alt="Phoenix Blaster">
-              Phoenix Blaster
-            </div>
-          </div>
-          <div class="col-6 p-1">
-            <div class="card p-1">
-              <img src="assets/images/3696cksyndi71.png" class="img-fluid" alt="Minishark">
-              Minishark
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-5 p-1">
-        <div class="card p-1 h-100">
-          <img src="assets/images/ZenithTerraria.webp" class="img-fluid" alt="Zenith">
-          Zenith
-        </div>
-      </div>
-      <div class="col-12 col-md-3">
-        <div class="row h-100">
-          <div class="col-6 p-1">
+          <div class="col-4 p-1">
             <div class="card p-1 h-100">
-              <img src="assets/images/sr2d5dcaf049f82.webp" class="img-fluid" alt="Meowmere">
-              Meowmere
+              <img src="assets/images/copper-shortsword.png" class="img-fluid" alt="Copper Shortsword">
+              Copper Shortsword
             </div>
           </div>
-          <div class="col-6 p-1">
+          <div class="col-4 p-1">
             <div class="card p-1 h-100">
-              <img src="assets/images/o81taukdu3y51.png" class="img-fluid" alt="Star Wrath">
-              Star Wrath
+              <img src="assets/images/muramasa.webp" class="img-fluid" alt="Muramasa">
+              Muramasa
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="card p-1 h-100">
+              <img src="assets/images/starfurry.webp" class="img-fluid" alt="Starfury">
+              Starfury
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Solar armor -->
+      <div class="col-12 col-md-4 p-1 equip">
+        <div class="card p-1 tall">
+          <img src="assets/images/solar-armor.png" class="img-fluid" alt="Solar Armor">
+          Solar Armor
+        </div>
+      </div>
+
     </div>
-    <div class="row">
-      <div class="col-12 col-md-4 p-1">
-        <div class="card p-1">
-          <img src="assets/images/Terraria-Last-Prism.png" class="img-fluid" alt="Last Prism">
-          Last Prism
-        </div>
-      </div>
-      <div class="col-12 col-md-5 p-1">
-        <div class="card p-1">
-          <img src="assets/images/vbx.png" class="img-fluid" alt="Vortex Beater">
-          Vortex Beater
-        </div>
-      </div>
+
+    <div class="row equip">
+
+      <!-- Broom mount -->
       <div class="col-12 col-md-3 p-1">
-        <div class="card p-1">
-          <img src="assets/images/Screenshot_2026-10-10_154844-removebg-preview.png" class="img-fluid" alt="Rainbow Rod">
-          Rainbow Rod
+        <div class="card p-1 tall">
+          <img src="assets/images/witchs-broom.webp" class="img-fluid" alt="Witch's Broom">
+          Witch's Broom
+        </div>
+      </div>
+
+      <div class="col-12 col-md-9">
+        <div class="row">
+          <div class="col-4 p-1">
+            <div class="card p-1 h-100">
+              <img src="assets/images/fire-gauntlet.webp" class="img-fluid" alt="Fire Gauntlet">
+              Fire Gauntlet
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="card p-1 h-100">
+              <img src="assets/images/berserkers-glove.png" class="img-fluid" alt="Berserker's Glove">
+              Berserker's Glove
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="card p-1 h-100">
+              <img src="assets/images/celestial-shell.webp" class="img-fluid" alt="Celestial Shell">
+              Celestial Shell
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 p-1">
+            <div class="card p-1 h-100">
+              <img src="assets/images/destroyer-emblem.png" class="img-fluid" alt="Destroyer Emblem">
+              Destroyer Emblem
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="card p-1 h-100">
+              <img src="assets/images/mechanical_glove.png" class="img-fluid" alt="Mechanical Glove">
+              Mechanical Glove
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="card p-1 h-100">
+              <img src="assets/images/soaring-insignia.png" class="img-fluid" alt="Soaring Insignia">
+              Soaring Insignia
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 p-1">
+            <div class="card p-1 h-100">
+              <img src="assets/images/master-ninja-gear.webp" class="img-fluid" alt="Master Ninja Gear">
+              Master Ninja Gear
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="card p-1 h-100">
+              <img src="assets/images/frozen-shield.png" class="img-fluid" alt="Frozen Shield">
+              Frozen Shield
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="card p-1 h-100">
+              <img src="assets/images/solar-wings.webp" class="img-fluid" alt="Solar Wings">
+              Solar Wings
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
